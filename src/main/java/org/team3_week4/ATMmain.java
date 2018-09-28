@@ -5,5 +5,13 @@ public class ATMmain {
         Man a = new Man();
 
     }
+
+    public static void deposit(int money, Man cust) {
+	cust.money += money;
+    }
+    
+    public static void showAccount(Man cust) {
+	System.out.println(cust.money + "원");
+   }
 }
 
