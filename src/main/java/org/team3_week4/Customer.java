@@ -5,8 +5,8 @@ import lombok.Data;
 @Data
 public class Customer {
 
-    public int money;
-    public String ID;
-    public int PW;
+    private int money;
+    private String ID;
+    private int PW;
 
 }
