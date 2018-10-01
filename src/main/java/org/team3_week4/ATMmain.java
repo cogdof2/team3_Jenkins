@@ -11,10 +11,13 @@ class ATMmain {
          * this Method execute coverall Methods.
          */
         Customer cust = new Customer();
+        System.out.println("===Welcome to Team3 's ATM!!===");
         System.out.println("Please enter ID");
+        System.out.println("==============");
         String Id = in.nextLine();
         cust.setID(Id);
         System.out.println("Please enter Password");
+        System.out.println("==============");
         int Pw = in.nextInt();
         cust.setPW(Pw);
 
@@ -94,10 +97,12 @@ class ATMmain {
          * to show menus in this Method
          * need :: to add Menus
          */
+        System.out.println("==============");
         System.out.println("1. Exit");
         System.out.println("2. Deposit");
         System.out.println("3. Withdraw");
         System.out.println("4. ShowAccount");
+        System.out.println("==============");
     }
 }
 
