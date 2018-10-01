@@ -27,17 +27,23 @@ class ATMmain {
                     System.out.println("Exit System");
                     return;
                 case 2 :
+                    showWarning();
                     System.out.println("Please enter the amount to be paid.");
                     money = in.nextInt();
                     deposit(money,cust);
                     break;
                 case 3 :
+                    showWarning();
                     System.out.println("Please enter the amount to be paid.");
                     money = in.nextInt();
                     withdraw(money,cust);
                     break;
                 case 4 :
                     showAccount(cust); break;
+
+                case 5 :
+                    showAccount(cust); break;
+
                 default :
                     System.out.println("You entered wrong number. Please re-enter.");
                     break;
@@ -57,6 +63,30 @@ class ATMmain {
     void showAccount(Customer cust) {
         System.out.println("Your balance is "+cust.getMoney() + "Won");
         System.out.println();
+    }
+
+    void showWarning() {
+        String check="";
+        in.nextLine();
+        while(true){
+            System.out.println("Are you doing this transaction after receiving a call from an agency (IRS, prosecutor's financial institution, etc.) or a stranger?");
+            System.out.println("Y / N");
+            check = in.nextLine();
+
+            if(check.equals("y")|| check.equals("Y")){
+                System.out.println("Be careful of voice phishing.");
+                System.out.println("Exit System");
+                System.exit(0);
+            }
+            else if(check.equals("n") || check.equals("N")){
+                break;
+            }
+            else{
+                System.out.println("Wrong input.");
+            }
+        }
+
+
     }
 
     void showMenu(){
