@@ -44,9 +44,6 @@ class ATMmain {
                 case 4 :
                     showAccount(cust); break;
 
-                case 5 :
-                    showAccount(cust); break;
-
                 default :
                     System.out.println("You entered wrong number. Please re-enter.");
                     break;
