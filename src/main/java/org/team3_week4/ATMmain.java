@@ -26,7 +26,7 @@ class ATMmain {
         /**
          * this Method execute coverall Methods.
          */
-        System.out.println("===Welcome to Team3 's ATM!!===");
+        showOpening();
 
         int choice = 0;
 
@@ -87,6 +87,15 @@ class ATMmain {
                 }
             }
         }
+    }
+
+    void showOpening(){
+        System.out.println("_______ ______          __  __   ____          _______ __  __ ");
+        System.out.println(" |__   __|  ____|   /\\   |  \\/  | |___ \\      /\\|__   __|  \\/  |");
+        System.out.println("    | |  | |__     /  \\  | \\  / |   __) |    /  \\  | |  | \\  / |");
+        System.out.println("    | |  |  __|   / /\\ \\ | |\\/| |  |__ <    / /\\ \\ | |  | |\\/| |");
+        System.out.println("    | |  | |____ / ____ \\| |  | |  ___) |  / ____ \\| |  | |  | |");
+        System.out.println("    |_|  |______/_/    \\_\\_|  |_| |____/  /_/    \\_\\_|  |_|  |_|");
     }
 
     void showWarning() {
