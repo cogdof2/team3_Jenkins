@@ -12,6 +12,7 @@ class ATMmain {
          */
         Customer cust = new Customer();
         System.out.println("=== :) ===");
+
         System.out.println("===Welcome to Team3 's ATM!!===");
         System.out.println("Please enter ID");
         System.out.println("==============");
@@ -95,12 +96,23 @@ class ATMmain {
          * to show menus in this Method
          * need :: to add Menus
          */
+        showOpening();
         System.out.println("==============");
         System.out.println("1. Exit");
         System.out.println("2. Deposit");
         System.out.println("3. Withdraw");
         System.out.println("4. ShowAccount");
         System.out.println("==============");
+    }
+
+    void showOpening(){
+        System.out.println("_______ ______          __  __   ____          _______ __  __ ");
+        System.out.println(" |__   __|  ____|   /\\   |  \\/  | |___ \\      /\\|__   __|  \\/  |");
+        System.out.println("    | |  | |__     /  \\  | \\  / |   __) |    /  \\  | |  | \\  / |");
+        System.out.println("    | |  |  __|   / /\\ \\ | |\\/| |  |__ <    / /\\ \\ | |  | |\\/| |");
+        System.out.println("    | |  | |____ / ____ \\| |  | |  ___) |  / ____ \\| |  | |  | |");
+        System.out.println("    |_|  |______/_/    \\_\\_|  |_| |____/  /_/    \\_\\_|  |_|  |_|");
+
     }
 }
 
