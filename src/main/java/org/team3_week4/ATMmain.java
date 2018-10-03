@@ -11,6 +11,7 @@ class ATMmain {
          * this Method execute coverall Methods.
          */
         Customer cust = new Customer();
+        System.out.println("=== :) ===");
         System.out.println("===Welcome to Team3 's ATM!!===");
         System.out.println("Please enter ID");
         System.out.println("==============");
