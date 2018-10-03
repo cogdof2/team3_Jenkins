@@ -6,7 +6,16 @@ import lombok.Data;
 public class Customer {
 
     private int money;
-    private String ID;
-    private int PW;
+    private String id;
+    private String password;
+    private boolean accessNow;
+
+    Customer(String id, String password) {
+        this.id = id;
+        this.password = password;
+        accessNow = false;
+    }
+
+    Customer() {}
 
 }
